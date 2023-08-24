@@ -15,4 +15,5 @@ from transpose import transpose
 ])
 def test_transpose(input, expected):
     ouput = transpose(input)
-    assert ouput == expected, f"For matrix {input}, expected {expected} but got {ouput}"
+    assert ouput == expected, f"""For matrix {input},
+     expected {expected} but got {ouput}"""
