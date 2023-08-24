@@ -34,3 +34,6 @@ def test_sort_list():
         person2 = persons[x+1]
         assert person1["age"] <= person2["age"], f"""List
          is not properly sorted at index {x}"""
+
+if __name__ == '__main__':
+    unittest.main()

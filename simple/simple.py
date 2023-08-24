@@ -4,7 +4,7 @@ import random
 def simple_list():
     list_of_dicts = []
     for i in range(10):
-        aux_dict = {"id": i, "age": random.randint(1, 130)}
+        aux_dict = {"id": i, "age": random.randint(1, 100)}
         list_of_dicts.append(aux_dict)
     return list_of_dicts
 
