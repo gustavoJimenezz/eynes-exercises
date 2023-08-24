@@ -1,11 +1,12 @@
 def transpose(matrix):
-    filas = len(matrix)
-    columnas = len(matrix[0])
-    matrix_trans = []
+    columns = len(matrix[0])
+    rows = len(matrix)
+    transposed_matrix = []
 
-    for i in range(columnas):
-        aux_1 = []
-        for j in range(filas):
-            aux_1.append(matrix[j][i])
-        matrix_trans.append(aux_1)
-    return matrix_trans
+    for row in range(columns):
+        aux_list = []
+        for column in range(rows):
+            aux_list.append(matrix[column][row])
+        transposed_matrix.append(aux_list)
+
+    return transposed_matrix
